@@ -18,13 +18,7 @@ public class PostTreinamentosHandler extends AbstractRequestHandler<TreinamentoP
 	}
 
 	@Override
-	protected Answer processImpl(TreinamentoPayload json, Request request) {
-//		int id = Integer.parseInt(request.params("id"));
-		
-//		if (treinamentoDao.existeDespertadorCom(id, value.getDataHora())) {
-//			return new Answer(409, dataToJson("Esta conta já existe!"));
-//		}
-		
+	protected Answer processImpl(TreinamentoPayload json, Request request) {		
 		Treinamento treinamento = treinamentoDao.criaTreinamento(
 			json.getTitulo(), 
 			json.getInicio(),
