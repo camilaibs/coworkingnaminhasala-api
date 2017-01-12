@@ -43,6 +43,6 @@ public class Service {
 		get("/treinamentos", new GetTreinamentosHandler());
 		get("/treinamentos/:id", new GetTreinamentosPorIdHandler());
 		put("/treinamentos/:id", new PutTreinamentosHandler());
-		put("/treinamentos/:id/emails", new PutTreinamentosHandler());
+		put("/treinamentos/:id/emails", new PutTreinamentosEmailsHandler());
 	}
 }
